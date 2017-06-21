@@ -10,6 +10,7 @@ public class Simulator {
 
   public static void main(String args[]) {
 
+    getInput();
     Scanner scanner = new Scanner(System.in);
 
     Comparator<Packet> comparator = new PacketComparator();
@@ -34,13 +35,13 @@ public class Simulator {
 
   }
 
-  public void getInput() {
+  public static void getInput() {
     Scanner scanner = new Scanner(System.in);
 
-    System.out.println("Enter number of nodes : ");
+    System.out.print("Enter number of nodes : ");
     numNode = Integer.parseInt(scanner.nextLine());
 
-    System.out.println("Enter Lamda : ");
+    System.out.print("Enter Lamda : ");
     lambda = Integer.parseInt(scanner.nextLine());
   }
 }
